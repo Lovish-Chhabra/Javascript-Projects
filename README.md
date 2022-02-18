@@ -1,12 +1,8 @@
 # Javascript-Projects
-<code>
   Hi, this repo is created to showcase the projects that  am currently working on to learn JS
 <br>
 Please support me in this endeavour and provide me with your valuable feedback on my code.
   <br>
-
-</code>
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <br>
 [![GitHub issues](https://img.shields.io/github/issues/Lovish-Chhabra/Javascript-Projects)](https://github.com/Lovish-Chhabra/Javascript-Projects/issues)
