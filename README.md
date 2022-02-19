@@ -18,7 +18,7 @@ This project contains all the projects i've recreated from jsbeginners.com .  [C
 ## Projects
 
 **1: [Change Background Color](./change%20background%20color)** - Completed <br>
-**2: [Hex Change Background Color]()**- To Start<br>
+**2: [Hex Change Background Color](./change%20background%20color%20using%20hex)**- Completed<br>
 
 ---
 
