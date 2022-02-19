@@ -12,7 +12,7 @@ Please support me in this endeavour and provide me with your valuable feedback o
 
 ---
 
-This project contains all the projects i've recreated from jsbeginner.com. 
+This project contains all the projects i've recreated from jsbeginners.com .  [Click here](https://lovish-chhabra.github.io/Javascript-Projects/) to see it in action.
 ---
 
 ## Projects
