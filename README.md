@@ -21,6 +21,7 @@ This project contains all the projects i've recreated from jsbeginners.com .
 **2: [Hex Change Background Color](./change%20background%20color%20using%20hex)**- Completed<br>
 **3: [Swiper JS Horizontal](./Swiper%20JS%20Horizontal)**- Completed<br>
 **4: [Swiper JS Vertical](./Swiper%20JS%20Vertical)**- Completed<br>
+**4: [Clock Display](./JS%20Clock)**- Completed<br>
 
 ---
 
