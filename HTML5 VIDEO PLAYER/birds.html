@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="LovishChhabra" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/videocontrols.js"></script>
+    <title>Birds VIDEO</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="dogs.html">Dogs</a>
+      <a href="cats.html">Cats</a>
+      <a class="active" href="birds.html">Birds</a>
+    </div>
+    <div class="button">
+        <button onclick="playpause()" class="mutton">Play/Pause</button>
+        <button onclick="muteunmute()" class="mutton">Mute/Unmute</button>
+        <button onclick="makesmall()" class="mutton">Make Small</button>
+        <button onclick="makenormal()" class="mutton">Make Normal</button>
+        <button onclick="enableLoop()"  class="mutton">Enable loop</button>
+        <button onclick="disableLoop()"  class="mutton">Disable loop</button>
+        <button onclick="checkLoop()"  class="mutton">Check loop status</button>
+        </div>
+    <br />
+    <br />
+    <div style="text-align: center" class="button">
+      <video
+        class="videoplayer"
+        id="myvideo"
+        width="420"
+        autoplay
+        muted
+        loop="true"
+      >
+        <source src="/videos/birds.mp4" type="video/mp4" />
+        <p>
+          Your browser doesn't support HTML5 video. Here is a
+          <a href="birds.mp4">link to the video</a> instead.
+        </p>
+      </video>
+    </div>
+  </body>
+</html>
