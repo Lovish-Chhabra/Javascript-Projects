@@ -12,7 +12,7 @@ Please support me in this endeavour and provide me with your valuable feedback o
 
 ---
 
-This project contains all the projects i've recreated from jsbeginners.com .
+This project contains all the projects i've created for practicing JS
 ---
 
 ## Projects
@@ -22,6 +22,7 @@ This project contains all the projects i've recreated from jsbeginners.com .
 **3: [Swiper JS Horizontal](./Swiper%20JS%20Horizontal)**- Completed<br>
 **4: [Swiper JS Vertical](./Swiper%20JS%20Vertical)**- Completed<br>
 **4: [Clock Display](./JS%20Clock)**- Completed<br>
+**5: [HTML5 Video Player](./HTML5%20VIDEO%20PLAYER)**- Completed<br>
 
 ---
 
