@@ -25,6 +25,7 @@ This Repo contains all the projects i've created for practicing JS
 **6: [HTML5 Video Player](./HTML5%20VIDEO%20PLAYER)**- Completed<br>
 **7: [WFPlayer](./WF%20Player)**- Completed<br>
 **8: [Horizontal Visualizer](./Horizontal_visualizer)**- Completed<br>
+**9: [Audio Visualizer](./audio_visualizer)**- Completed<br>
 
 
 ---
