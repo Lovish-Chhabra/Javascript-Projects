@@ -24,7 +24,7 @@ This Repo contains all the projects i've created for practicing JS
 **5: [Clock Display](./JS%20Clock)**- Completed<br>
 **6: [HTML5 Video Player](./HTML5%20VIDEO%20PLAYER)**- Completed<br>
 **7: [WFPlayer](./WF%20Player)**- Completed<br>
-**8: [WFPlayer](./Horizontal_visualizer)**- Completed<br>
+**8: [Horizontal Visualizer](./Horizontal_visualizer)**- Completed<br>
 
 
 ---
