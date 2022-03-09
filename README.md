@@ -12,7 +12,7 @@ Please support me in this endeavour and provide me with your valuable feedback o
 
 ---
 
-This project contains all the projects i've created for practicing JS
+This Repo contains all the projects i've created for practicing JS
 ---
 
 ## Projects
@@ -21,8 +21,11 @@ This project contains all the projects i've created for practicing JS
 **2: [Hex Change Background Color](./change%20background%20color%20using%20hex)**- Completed<br>
 **3: [Swiper JS Horizontal](./Swiper%20JS%20Horizontal)**- Completed<br>
 **4: [Swiper JS Vertical](./Swiper%20JS%20Vertical)**- Completed<br>
-**4: [Clock Display](./JS%20Clock)**- Completed<br>
-**5: [HTML5 Video Player](./HTML5%20VIDEO%20PLAYER)**- Completed<br>
+**5: [Clock Display](./JS%20Clock)**- Completed<br>
+**6: [HTML5 Video Player](./HTML5%20VIDEO%20PLAYER)**- Completed<br>
+**7: [WFPlayer](./WF%20Player)**- Completed<br>
+
+
 
 ---
 
