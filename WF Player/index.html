@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <title>Video page</title>
+  <meta name="description" content="WFPlayer Demo">
+  <meta name="author" content="LovishChhabra">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+  html { height:100%; }
+  body {height: 100%;overflow:hidden; background-size: cover;margin: 0;padding: 0; font-family: arial, verdana, sans-serif; }
+  </style>
+  <link rel="stylesheet" href="./CSS/style.css">
+  
+</head>
+<body>
+	<div class="btn">
+		<button onclick="wf.setOptions({
+		// Like change wave color
+		waveColor: 'red',
+	});">RED</button>
+	<button onclick="wf.setOptions({
+		// Like change wave color
+		waveColor: 'yellow',
+	});">yellow</button>
+	<button onclick="wf.setOptions({
+		// Like change wave color
+		waveColor: 'green',
+	});">green</button>
+	<button onclick="wf.setOptions({
+		// Like change wave color
+		waveColor: 'grey',
+	});">grey</button>
+	<button onclick="wf.setOptions({
+		// Like change wave color
+		waveColor: 'purple',
+	});">purple</button></div>
+	<div id="waveform" ></div>
+	<video id="video" src="./Assets/sample.mp4" controls loop></video>
+	
+	<script src="./js/wfplayer.js"></script>
+	<script>
+		var wf = new WFPlayer({
+    // Mount the audio waveform of the dom
+    container: document.querySelector('#waveform'),
+	
+    // Whether to use scroll mode
+    scrollable: true,
+	
+    // Media element like: video tag or audio tag
+    mediaElement: document.querySelector('#video'),
+
+    // Whether use web worker
+    useWorker: true,
+
+    // Thw refresh delay time
+    refreshDelay: 50,
+
+    // Whether to display wave
+    wave: true,
+
+    // Waveform color
+    waveColor: '#ff0',
+
+    // Background color
+    backgroundColor: 'rgb(28, 32, 34)',
+
+    // Whether to display cursor
+    cursor: true,
+
+    // Cursor color
+    cursorColor: '#ff0000',
+
+    // Whether to display progress
+    progress: true,
+
+    // progress color
+    progressColor: 'rgba(255, 255, 255, 0.5)',
+
+    // Whether to display grid
+    grid: true,
+
+    // Grid color
+    gridColor: 'rgba(255, 255, 255, 0.05)',
+
+    // Whether to display ruler
+    ruler: true,
+
+    // Ruler color
+    rulerColor: 'rgba(255, 255, 255, 0.5)',
+
+    // Whether to display ruler at the top
+    rulerAtTop: true,
+
+    // Pixel ratio
+    pixelRatio: window.devicePixelRatio,
+
+    // Which audio channel to render
+    channel: 0,
+
+    // Duration of rendering
+    duration: 10,
+
+    // The ratio of spaces on both sides
+    padding: 5,
+
+    // Waveform height scale ratio
+    waveScale: 0.8,
+});
+wf.load(document.querySelector('#video'));
+	</script>
+	
+</body>
+</html>
