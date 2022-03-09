@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <title>WaveSurferJS</title>
+  <meta name="description" content="WaveSurferJS">
+  <meta name="author" content="LovishChhabra">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+  html { height:100%; }
+  body {height: 100%;overflow: hidden; background-size: cover;margin: 0;padding: 0; font-family: arial, verdana, sans-serif; display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        bottom: -50px;
+        left: -50px;
+        background-image: url(./assets/bgimage.jpg);
+        background-position: center center;
+        background-size: cover;
+        filter: blur(10px);
+        
+
+    }
+.music{
+    position: absolute;
+    width: 85%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #000;
+    display: flex;
+    
+}
+#thumb{
+    width: 300px;
+}
+.info{
+    color: white;
+    margin-left: 30px;
+    flex: 1;
+}
+.controls{
+    margin-top: 40px;
+    margin: 10px 0 60px;
+}
+.controls img{
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+  </style>
+  <script src="./js/wavesurfer.js"></script>
+</head>
+<body>
+	<div class="background"></div>
+        <div class="music">
+            <img id="thumb" src="./assets/thumb.jpg">
+            <div class="info">
+                <h1>Never Gonna Give You Up</h1>
+                <br>
+                <br>
+                <div id="container"></div>
+                <div class="controls">
+                    <img src="./assets/play.png" id="playbtn">
+                    <img src="./assets/stop.png" id="stopbtn">
+                    <img src="./assets/volume.png" id="volumebtn">
+
+                </div>
+            </div>
+        </div>
+    
+
+<script>
+
+    var playbtn = document.getElementById("playbtn");
+    var stopbtn = document.getElementById("stopbtn");
+    var volumebtn = document.getElementById("volumebtn");
+
+    
+    var wavesurfer = WaveSurfer.create({
+    container: '#container',
+    waveColor: '#dde5ec',
+    progressColor: '#03cebf',
+    barWidth: 4, 
+    height : 90,
+    responsive:true,
+    hidescrollbar:true,
+    barRadius:4,
+
+});
+
+wavesurfer.load('./assets/Never.mp3');
+
+playbtn.onclick = function(){
+    wavesurfer.playPause();
+    if(playbtn.src.includes("play.png")){
+        playbtn.src = "./assets/pause.png";
+    }else{
+        playbtn.src = "./assets/play.png";
+    }
+}
+stopbtn.onclick = function(){
+    wavesurfer.stop();
+    playbtn.src = "./assets/play.png";
+}
+volumebtn.onclick = function(){
+    wavesurfer.toggleMute();
+    if(volumebtn.src.includes("volume.png")){
+        volumebtn.src = "./assets/mute.png";
+    }else{
+        volumebtn.src = "./assets/volume.png";
+    }
+}
+
+wavesurfer.on('finish',function(){
+    playbtn.src = "./assets/play.png";
+    wavesurfer.stop();
+});
+
+
+
+
+</script>
+
+</body>
+</html>
