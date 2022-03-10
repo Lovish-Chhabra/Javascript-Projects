@@ -27,6 +27,7 @@ This Repo contains all the projects i've created for practicing JS
 **8: [Horizontal Visualizer](./Horizontal_visualizer)**- Completed<br>
 **9: [Audio Visualizer](./audio_visualizer)**- Completed<br>
 **10: [WaveSurferJS](./WavesurferJS)**- Completed<br>
+**11: [ChartJS](./chartjs)**- Completed<br>
 
 
 ---
