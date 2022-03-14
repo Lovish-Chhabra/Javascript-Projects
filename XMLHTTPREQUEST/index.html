@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Lovish Chhabra" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XMLHttpRequest</title>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        overflow: hidden;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        font-family: arial, verdana, sans-serif;
+      }
+      .maindiv {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+      }
+      .xmltext {
+        display: block;
+        position: relative;
+        border: 1px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv" id="maindiv"></div>
+
+    <script>
+      var database = {};
+
+      function xmlload() {
+        console.log("LOADING XML...............");
+        var xmldata = new XMLHttpRequest();
+        var xyz = document.getElementById("maindiv");
+        console.log(xyz);
+        xmldata.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            database.response = xmldata.responseXML;
+            // console.log("CHECKING XML FEED.........");
+            // console.log("XML LOADED................ ");
+            // console.log(database.response);
+
+            //database data loading start
+            database.data = {
+              title: getvalue(database.response, "title"),
+              name: getvalue(database.response, "name"),
+              email: getvalue(database.response, "email"),
+              contact: getvalue(database.response, "contact"),
+              whatsapp: getvalue(database.response, "whatsapp"),
+            }; //database data loading end
+
+            
+            // console.log("XML DATA LOADED : ",database.data)
+            console.log(xyz);
+
+          
+
+            xyz.insertAdjacentHTML("beforeend",'<div class="xmltext" id="lovish">' +database.data.title +'</div>'
+            );
+            xyz.insertAdjacentHTML("beforeend",'<div class="xmltext" id="lovish">' +database.data.name +'</div>'
+            );
+            xyz.insertAdjacentHTML("beforeend",'<div class="xmltext" id="lovish">' +database.data.email +'</div>'
+            );
+            xyz.insertAdjacentHTML("beforeend",'<div class="xmltext" id="lovish">' +database.data.contact +'</div>'
+            );
+          } else if (this.readyState == 4 && this.status != 200) {
+            if (!db.reload) {
+              db.reload = true;
+              xmlload();
+            } else {
+              console.log("XML LOAD FAILED PLEASE REFRESH PAGE......");
+            }
+          }
+        }; //onreadystatechange ends here
+
+        xmldata.open("GET", "./source/lovish.xml");
+        xmldata.overrideMimeType("text/xml");
+        xmldata.send();
+        return false;
+      } //xml load ends here
+
+      xmlload();
+      // static templates
+      function getvalue(obj, str) {
+        var data = obj.getElementsByTagName(str)[0];
+        return data.childNodes[0].nodeValue;
+      }
+    </script>
+  </body>
+</html>
