@@ -17,19 +17,20 @@ This Repo contains all the projects i've created for practicing JS
 
 ## Projects (latest on top)
 
-**1:  [XMLHttpRequest](./XMLHTTPREQUEST)**-completed<br>
-**2:  [ChartJs with Selection of Charts](./chartjs_with_selector)**-Completed<br>
-**3:  [ChartJS](./chartjs)**- Completed<br>
-**4:  [WaveSurferJS](./WavesurferJS)**- Completed<br>
-**5:  [Audio Visualizer](./audio_visualizer)**- Completed<br>
-**6:  [Horizontal Visualizer](./Horizontal_visualizer)**- Completed<br>
-**7:  [WFPlayer](./WF%20Player)**- Completed<br>
-**8:  [HTML5 Video Player](./HTML5%20VIDEO%20PLAYER)**- Completed<br>
-**9:  [Clock Display](./JS%20Clock)**- Completed<br>
-**10:  [Swiper JS Vertical](./Swiper%20JS%20Vertical)**- Completed<br>
-**11:  [Swiper JS Horizontal](./Swiper%20JS%20Horizontal)**- Completed<br>
-**12:  [Hex Change Background Color](./change%20background%20color%20using%20hex)**- Completed<br>
-**13:  [Change Background Color](./change%20background%20color)** - Completed <br> 
+**1:  [Notes App](./Notes%20App)**-Completed<br>
+**2:  [XMLHttpRequest](./XMLHTTPREQUEST)**-Completed<br>
+**3:  [ChartJs with Selection of Charts](./chartjs_with_selector)**-Completed<br>
+**4:  [ChartJS](./chartjs)**- Completed<br>
+**5:  [WaveSurferJS](./WavesurferJS)**- Completed<br>
+**6:  [Audio Visualizer](./audio_visualizer)**- Completed<br>
+**7:  [Horizontal Visualizer](./Horizontal_visualizer)**- Completed<br>
+**8:  [WFPlayer](./WF%20Player)**- Completed<br>
+**9:  [HTML5 Video Player](./HTML5%20VIDEO%20PLAYER)**- Completed<br>
+**10:  [Clock Display](./JS%20Clock)**- Completed<br>
+**11:  [Swiper JS Vertical](./Swiper%20JS%20Vertical)**- Completed<br>
+**12:  [Swiper JS Horizontal](./Swiper%20JS%20Horizontal)**- Completed<br>
+**13:  [Hex Change Background Color](./change%20background%20color%20using%20hex)**- Completed<br>
+**14:  [Change Background Color](./change%20background%20color)** - Completed <br> 
 
 
 ---
